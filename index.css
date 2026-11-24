@@ -1,0 +1,119 @@
+:root {
+    --fond: #121116;
+    --texte: #f4edf0;
+    --rose: #e50185;
+}
+
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--fond);
+    font-family: "IBM Plex Serif";
+    margin: 0;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Archivo Black", sans-serif;
+    }
+
+    main {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+        color: var(--texte);
+        box-shadow: 0px 50px 50px #AE2FD6;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: var(--fond);
+        padding: 15px;
+        border-bottom: 1px solid var(--rose);
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: space-around;
+
+            li {
+                color: var(--texte);
+
+            }
+
+            :link,
+            :visited,
+            :hover,
+            :active {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            li:hover {
+                font-weight: bold;
+                color: var(--rose);
+                text-decoration: underline;
+                text-decoration-color: var(--rose);
+                text-decoration-thickness: 3px;
+                text-underline-offset: 10px;
+            }
+
+        }
+    }
+
+    .title {
+        font-size: 50px;
+        padding: 30px 0 0px 0;
+        justify-content: center;
+        display: flex;
+        background-color: var(--fond);
+        color: var(--texte);
+        border-bottom: 2px solid var(--rose);
+    }
+
+    #presentation_formation {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                width: 49%;
+                display: inline-block;
+                padding: 2px;
+
+                img {
+                    width: 100%;
+                    border: 2px solid var(--rose);
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    #competence {
+        width: 100%;
+        border: 2px solid var(--rose);
+        border-radius: 5px;
+    }
+
+    main h1 {
+        border-bottom: 1px solid var(--rose);
+    }
+}
